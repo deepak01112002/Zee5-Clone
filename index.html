@@ -9,62 +9,20 @@
     <link rel="stylesheet" href="slideshow.css">
     <link rel="stylesheet" href="container.css">
     <link rel="stylesheet" href="languagesection.css">
-    <style>
-       .logDiv,.logo{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #fff;
-        margin-left: 5px;
-       }
-      .logo a{
-        margin: 5px;
-      }
-      .leftlogo{
-        display: flex;
-        align-items: center;
-    } 
-    .leftlogo img{
-        margin: 5px;
-    }
-    .about{
-    display: flex;
-    padding: 2px;
-    margin-left: 10px;
-    }
-    .about a{
-        text-decoration: none;
-       color: rgb(210, 193, 193);
-    }
-    .about p{
-        margin:5px
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        justify-content: space-between;
-        
-    }
-   
-    
-      
-      
-       
-    </style>
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
    <navbar>
         <div id="listpart">
-            <label><a href="./index.html"><img id="logo" src="/bright-scent-6664/img/logo.png.png" alt=""></a></label>
+            <label><a href="./index.html"><img style="border: none;" id="logo" src="/bright-scent-6664/img/logo.png.png" alt=""></a></label>
         <!-- </div> -->
         <!-- <div id="listpart"> -->
             <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./tvshow.html">TV Shows</a></li>
+            <li><a href="#">TV Shows</a></li>
             <li><a href="./movies.html">Movies</a></li>
-            <li><a href="./webseries.html">Web Series</a></li>
-            <li><a href="./news.html">News</a></li>
+            <li><a href="#">Web Series</a></li>
+            <li><a href="#">News</a></li>
           </ul>
         </div>
         <div id="searchpart">
@@ -81,19 +39,22 @@
             </ul>
          </div>
     </navbar> 
-    
+
+    <!-- navbarend -->
+
     <div id="slideshow">
         <button  style="color: #fff;font-size: 50px;" id="prev">&#10094;</button>
         <a style="text-decoration: none;" href="./movies.html"><img id="slideshowimage" src="https://akamaividz2.zee5.com/image/upload/w_899,h_506,c_scale,f_webp,q_auto:eco/resources/0-6-3392/app_cover/1440x8102a557f472d8447feb0fbb6f82cddd65c.jpg" alt=""></a>
         <button style="color: #fff;font-size: 50px;" id="next">&#10095;</button>
     </div>
     
+     <!-- slideshowsection   -->
+
     <div class="movie-list-wrapper">
-        
         <div class="container">
                 <div class="top_heading">
                     <p>Trending Near You</p>
-                    <a href="./movies.html">More</a>
+                    <a href="more.html">More</a>
                </div>
                <!-- firstcard -->
                 <div class="card_container">
@@ -198,7 +159,7 @@
         <div class="container">
             <div class="top_heading">
                 <p>Top 10 Movies</p>
-                <a href="./movies.html">More</a>
+                <a href="more.html">More</a>
            </div>
            <!-- firstcard -->
             <div class="card_container">
@@ -321,10 +282,10 @@
      
       <!-- Top 10 Web Series -->
 
-      <div style="overflow: scroll;" class="container">
+      <div style="overflow: hidden;" class="container">
         <div class="top_heading">
             <p>Top 10 Movies</p>
-            <a href="./movies.html">More</a>
+            <a href="more.html">More</a>
        </div>
        <!-- firstcard -->
         <div class="card_container">
@@ -442,10 +403,10 @@
 
       <!-- languagefilms section   -->
 
-  <div style="overflow: auto;" class="container1">
+  <div style="overflow: hidden;" class="container1">
         <div class="top_heading1">
             <p>Explore in Your Language</p>
-            <a href="./movies.html">More</a>
+            <a href="more.html">More</a>
        </div>
        <!-- firstcard -->
         <div class="card_container1">
@@ -549,10 +510,10 @@
         </div>
    </div>
    <!-- webseriessection -->
-   <div style="overflow: auto;" class="container">
+   <div style="overflow: hidden;" class="container">
     <div class="top_heading">
         <p>Top 10 Movies</p>
-        <a href="./movies.html">More</a>
+        <a href="more.html">More</a>
    </div>
    <!-- firstcard -->
     <div class="card_container">
@@ -693,20 +654,22 @@
             <p><a href="">Privacy Policy | </a></p>
             <p><a href="">Terms of Use</a></p>
        </div>
-       <div class="row">
-        <div class="footer-col">
-            <h2>Popular TV Shows</h2>
-            <div><a href="">Kumkum Bhgya</a></div>
-            <div><a href="">Kundali Bhagya</a></div>
-            <div><a href="">Bhagya Lakshmi</a></div>
-            <div><a href="">Tujhse Hai Raabta</a></div>
-            <div><a href="">Kyun Rishton Mein Katti Batti</a></div>
-        </div>
+            <div style="color: #fff;" class="headingpart">
+                <div class="mainhead">Popular</div>
+                <div class="parts">
+                    <ul>
+                        <li>a</li>
+                        <li>a</li>
+                        <li>a</li>
+
+                    </ul>
+                </div>
+            </div>
        </div>
     </div>
    </footer>
 </body>
 <script src="./script/slideshow.js"></script>
-     
+<script src="datamovies.js"></script>    
 
 </html>
