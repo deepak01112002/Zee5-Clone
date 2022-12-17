@@ -34,3 +34,23 @@ margin-left: 10px;
     justify-content: space-between;
     
 }
+.footer-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+} 
+.popular ul h3{
+color: #fff;
+}
+.popular ul li{
+list-style-type: disc;
+color: grey;
+}
+.end{
+margin: 20px;
+color: grey;
+} 
+.fb,.insta,.twit{
+width: 20%;
+}

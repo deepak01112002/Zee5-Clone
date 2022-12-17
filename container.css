@@ -93,7 +93,13 @@ color: #ffffff;
 .text_bottom p{
 color:grey
 }
-.movie-list-wrapper{
-position:relative;
-overflow: hidden;
+
+.card_container::-webkit-scrollbar{
+    display: none;
+}
+.card_container,.card_container1{
+    overflow-x: scroll;
+}
+.card_container1::-webkit-scrollbar{
+    display: none;
 }
