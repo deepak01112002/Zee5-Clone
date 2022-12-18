@@ -24,5 +24,4 @@ forw.addEventListener("click",()=>{
     }else{
         x=0
     }
-})
- 
+
