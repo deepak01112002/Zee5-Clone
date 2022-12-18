@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Register</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         body{
+        background-color: #0F0617;
+      }
+        #registeration{
+        width: 30%;
+        height: 600px;
+        margin: auto;
+        margin-top: 40px;
+        color: white;
+        text-align: center;
+    }
+      button{
+        width: 80%;
+        margin: 25px;
+        height: 30px;
+       color: palevioletred;
+      }
+      img{
+        height: 100%;
+      }
+      input:nth-of-type(1),input:nth-of-type(2){
+        display: block;
+       background-color:#0F0617;
+       border: none;
+       padding: 30px;
+       width: 100%;
+       color: white;
+        outline: none;
+        
+      }
+    </style>
+</head>
+<body>
+    <form id="registeration">
+   
+        <h3>Create a new account</h3>
+        <p>Create an account to continue enjoying uninterrupted video and personalised experience</p>
+        <button><img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.52.65" alt=""></button>
+        <br> 
+        or
+         
+            <input type="email" placeholder="Email Id " id="email">
+            <input type="password" placeholder="Enter Password" id="password">
+       
+        <input type="checkbox" required>
+        <p>By procededing you agree to our <a href="#">Terms of Servicex</a>& <a href="#">Privacy Policy.</a></p>
+
+        <button id="Register"> Register</button>
+        <p>Already register?<a href="./login.html">Login</a></p>
+   
+</form>
+</body>
+<script>
+    let email = document.getElementById("email")
+     let pass = document.getElementById("password")
+     let regi = document.getElementById("Register")
+     let arr = JSON.parse(localStorage.getItem("login"))||[]
+
+     regi.addEventListener("click",submit1)
+    function submit1(){
+        event.preventDefault();
+        let obj ={
+            Email:email.value,
+            Password:pass.value
+        }
+        if(obj.Password.length>=8&&obj.Password !==""&&obj.Email !==""){
+            arr.push(obj)
+          localStorage.setItem("login",JSON.stringify(arr))
+          window.location.href = "login.html"
+        }else{
+            alert("Please fill the details Carefully")
+        }
+        
+    }
+        
+     
+
+</script>
+</html>
