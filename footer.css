@@ -1,0 +1,56 @@
+.logDiv,.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-left: 5px;
+   }
+  .logo a{
+    margin: 5px;
+  }
+  .leftlogo{
+    display: flex;
+    align-items: center;
+} 
+.leftlogo img{
+    margin: 5px;
+}
+.about{
+display: flex;
+padding: 2px;
+margin-left: 10px;
+}
+.about a{
+    text-decoration: none;
+   color: rgb(210, 193, 193);
+}
+.about p{
+    margin:5px
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.footer-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+} 
+.popular ul h3{
+color: #fff;
+}
+.popular ul li{
+list-style-type: disc;
+color: grey;
+}
+.end{
+margin: 20px;
+color: grey;
+} 
+.fb,.insta,.twit{
+width: 20%;
+}
